@@ -1,6 +1,12 @@
 # First Try to Use OpenShift
 
-### 1. Login the OpenShift
+### 1. Enable oc command tool
+If using crc to deploy OpenShift, you don't need to download `oc` command.
+Because, The crc is include the `oc`.
+
+You can run `eval $(crc oc-env)` then oc will add to your current environment Path.
+
+### 2. Login the OpenShift
 Kubernetes config file management always big problem.
 As you know, community develop some components to let auth field to be perfect.
 But official tools is better. The official tools means some person will maintain it. 
@@ -57,7 +63,7 @@ users:
 
 ```
 
-### 2. Watch the Running Pods
+### 3. Watch the Running Pods
 
 At first I try to get the info by `kubectl` command. It is work too. 
 That means OpenShift ApiService is compatible with basic `kube-apiservice` interface. 
@@ -140,7 +146,7 @@ openshift-service-catalog-apiserver-operator            openshift-service-catalo
 openshift-service-catalog-controller-manager-operator   openshift-service-catalog-controller-manager-operator-db954mng6   1/1     Running     0          22d
 ```
 
-### 3. Confirm the Kubernetes Version
+### 4. Confirm the Kubernetes Version
 
 When I write this page. Kubernetes 1.18 version have been release. But Kubernetes 1.16 is very stable.
 Maybe to Enterprise user, safe and save (money) is first. 
@@ -150,7 +156,7 @@ Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.0", GitCom
 Server Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.2", GitCommit:"aa10b5b", GitTreeState:"clean", BuildDate:"2020-03-16T18:11:23Z", GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"}
 ```
 
-### 4. Confirm the Metrics Customer of Each Components
+### 5. Confirm the Metrics Customer of Each Components
 CRC is not install the metrics server on OpenShift cluster.
 ```
 $ kubectl top node                                                                                                 
