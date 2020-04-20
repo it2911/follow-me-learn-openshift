@@ -1,4 +1,4 @@
-# Donwload CRC
+# Ready Job for Start CRC
 
 ### 1. Ready RedHat Account 
 You need the RedHat Account to download the crc command tools and `pull secret`.
@@ -19,3 +19,5 @@ But for convenience I copied the download command for you.
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 ```
+
+[Next Step](./02_Setup_CRC.md)

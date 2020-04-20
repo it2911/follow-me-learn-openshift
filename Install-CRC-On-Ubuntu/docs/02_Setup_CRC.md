@@ -5,8 +5,9 @@ This command will help you to check and setup a local environment to install Ope
 ```
 $ crc setup
 ```
+[Next Step](./03_Start_CRC.md)
 
-### 2. The Problems
+### 2. The Problems what I met
 I always believe that nothing is easy. The same things happened on I install the OpenShift. 
 ```
 $ crc setup --log-level error                

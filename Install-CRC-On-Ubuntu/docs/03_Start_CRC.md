@@ -4,9 +4,11 @@
 ### 1. Start the OpenShift Cluster
 If you follow the official document which tell us run `crc start -p pull-secret`.
 
-Yes, it is very easy. But it lead some problems on my PC.
+[Next Step](./04_First_Use_OpenShift.md)
 
-### 2. The Problems
+Yes, it looks very easy. But it lead some problems on my PC.
+
+### 2. The Problems what I met
 #### 2.1 Cloud not to access the internet.
 
 When I finished the `crc start` running. I meet the below error info. 
