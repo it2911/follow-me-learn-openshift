@@ -9,7 +9,7 @@ I am going to install OpenShift on Ubuntu System. So I download crc linux comman
 ### 3. Download Pull Secret
 This file will be used when you run `crc start` command.
 
-[crc-download-page](../images/Screenshot_20200419_234045.png)
+![crc-download-page](../images/Screenshot_20200419_234045.png)
 
 ### 4. Download kubectl Command tools
 
